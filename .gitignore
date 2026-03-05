@@ -1,0 +1,57 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build/test/tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Conda local files
+.conda/
+conda-meta/
+
+# IDE/editor
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Local secrets
+.env
+
+# User-requested no-upload files (explicit)
+/teachers.jpg
+/chinese-poetry-master.zip
+/data/cache/chinese-poetry/chinese-poetry-master.zip
+
+# Dataset and cache files (repository ships code, not bulky data)
+data/cache/
+data/input/*.csv
+
+# Optional annotation artifacts (large derived outputs)
+data/annotation/*.csv
+data/annotation/*.txt
+!data/annotation/README.md
+
+# Local exported images for reports/slides
+result.svg
+result_neo4j_aura.PNG
