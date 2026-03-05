@@ -3,6 +3,14 @@
 本项目面向汉语言文学研究场景，提供从唐宋诗歌语料到 Neo4j 图谱的完整流程：  
 数据构建 -> 关系抽取 -> 历史地名规范化 -> 证据链审计 -> AuraDB 导入 -> 查询与评估。
 
+## 实验结果图（项目仓库内示例）
+
+以下图片为当前项目运行后的可视化结果与研究背景截图，仓库中保留并上传：
+
+![实验结果：Bloom 导出图](./result.svg)
+
+![实验结果：Neo4j Aura 可视化截图](./result_neo4j_aura.PNG)
+
 ## 1. 核心特性
 
 - 唐宋诗歌抽样与结构化（诗人、诗作、时代、地名、意象）
@@ -229,7 +237,6 @@ LIMIT 100;
 
 以下文件已在 `.gitignore` 中显式忽略：
 
-- `teachers.jpg`
 - `chinese-poetry-master.zip`
 - `data/cache/chinese-poetry/chinese-poetry-master.zip`
 - `data/cache/` 下其他缓存
@@ -242,6 +249,7 @@ LIMIT 100;
 - `requirements.txt`
 - `.env.example`
 - `README.md`、`QUICKSTART_AURADB.md`、`IMPORT_AURADB.md`
+- `result.svg`、`result_neo4j_aura.PNG`
 
 ### 11.3 如果项目选择“不上传任何数据集”
 
@@ -252,13 +260,13 @@ LIMIT 100;
 
 ```powershell
 git status
-git check-ignore -v teachers.jpg chinese-poetry-master.zip data/cache/chinese-poetry/chinese-poetry-master.zip
+git check-ignore -v chinese-poetry-master.zip data/cache/chinese-poetry/chinese-poetry-master.zip
 ```
 
 如果这些文件之前已经被加入过 Git 暂存区，需要先取消跟踪：
 
 ```powershell
-git rm --cached teachers.jpg chinese-poetry-master.zip data/cache/chinese-poetry/chinese-poetry-master.zip
+git rm --cached chinese-poetry-master.zip data/cache/chinese-poetry/chinese-poetry-master.zip
 ```
 
 ## 12. 数据来源与边界

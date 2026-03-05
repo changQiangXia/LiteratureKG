@@ -52,6 +52,6 @@ data/annotation/*.csv
 data/annotation/*.txt
 !data/annotation/README.md
 
-# Local exported images for reports/slides
-result.svg
-result_neo4j_aura.PNG
+# Keep result images tracked in repository:
+# - result.svg
+# - result_neo4j_aura.PNG
